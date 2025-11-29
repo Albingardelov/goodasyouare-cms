@@ -26,7 +26,7 @@ export default ({ env }) => {
       connection: env('DATABASE_URL')
         ? {
             connectionString: env('DATABASE_URL'),
-            ssl: { rejectUnauthorized: false },
+            ssl: env.bool('DATABASE_SSL', true) ? { rejectUnauthorized: false } : false,
           }
         : {
             host: env('DATABASE_HOST', 'localhost'),
