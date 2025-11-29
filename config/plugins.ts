@@ -6,7 +6,7 @@ export default ({ env }) => ({
           maxage: 300000,
         },
       },
-      sizeLimit: 100 * 1024 * 1024, // 100MB
+      sizeLimit: 10 * 1024 * 1024, // 10MB (reduced for Render free tier)
       breakpoints: {
         xlarge: 1920,
         large: 1000,
@@ -14,6 +14,8 @@ export default ({ env }) => ({
         small: 500,
         xsmall: 64,
       },
+      // Optimize for Render
+      responseLimit: 10 * 1024 * 1024, // 10MB
     },
   },
 });
