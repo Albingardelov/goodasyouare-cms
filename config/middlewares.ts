@@ -19,8 +19,19 @@ export default [
     name: 'strapi::cors',
     config: {
       origin: process.env.CORS_ORIGIN 
-        ? process.env.CORS_ORIGIN.split(',')
-        : ['http://localhost:5173', 'http://localhost:3000'],
+        ? process.env.CORS_ORIGIN.split(',').map((url: string) => url.trim())
+        : [
+            'http://localhost:5173',
+            'http://localhost:3000',
+            'http://127.0.0.1:5173',
+            'http://127.0.0.1:3000',
+            'https://goodasyouare2-0.onrender.com',
+            'https://www.goodasyouare.com',
+            'https://goodasyouare.com',
+          ],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+      keepHeaderOnError: true,
     },
   },
   'strapi::poweredBy',
