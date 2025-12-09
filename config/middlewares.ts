@@ -22,8 +22,10 @@ export default [
         ? process.env.CORS_ORIGIN.split(',').map((url: string) => url.trim())
         : [
             'http://localhost:5173',
+            'http://localhost:4173', // Vite preview server
             'http://localhost:3000',
             'http://127.0.0.1:5173',
+            'http://127.0.0.1:4173', // Vite preview server
             'http://127.0.0.1:3000',
             'https://goodasyouare2-0.onrender.com',
             'https://www.goodasyouare.com',
