@@ -28,7 +28,7 @@ export default [
             'https://goodasyouare2-0.onrender.com',
             'https://www.goodasyouare.com',
             'https://goodasyouare.com',
-            'https://*.vercel.app', // Allow all Vercel preview deployments
+            'https://good-as-you-are2-0-j8y0tueot-albin-gardelovs-projects.vercel.app',
           ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
