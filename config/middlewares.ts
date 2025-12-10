@@ -31,6 +31,7 @@ export default [
             'https://www.goodasyouare.com',
             'https://goodasyouare.com',
             'https://good-as-you-are2-0-j8y0tueot-albin-gardelovs-projects.vercel.app',
+            'https://good-as-you-are2-0-9z4nutpyp-albin-gardelovs-projects.vercel.app',
           ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
