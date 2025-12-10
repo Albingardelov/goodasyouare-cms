@@ -30,6 +30,7 @@ export default [
             'https://goodasyouare2-0.onrender.com',
             'https://www.goodasyouare.com',
             'https://goodasyouare.com',
+            'https://good-as-you-are2-0.vercel.app', // Stable Vercel URL (doesn't change)
             'https://good-as-you-are2-0-j8y0tueot-albin-gardelovs-projects.vercel.app',
             'https://good-as-you-are2-0-9z4nutpyp-albin-gardelovs-projects.vercel.app',
           ],
